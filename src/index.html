@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Wildberries</title>
+    <link rel="stylesheet" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">Wildberries</div>
+          <div class="header-search" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              class="input-search"
+              id="input-search"
+              placeholder="Я ищу..."
+            />
+          </div>
+          <div class="basket" id="basket">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="basket-name">Корзина</span>
+            <dialog class="basket-dialog-window">
+              <div class="basket-preview">
+                <div class="title-container">
+                  <h3 class="basket-preview-title">Корзина</h3>
+                  <button class="close-basket-preview">X</button>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-page">
+        <div class="container">
+          <div class="banner-wrapper" id="banner-wrapper">
+            <div class="slider-container">
+              <div class="banner-img">
+                <img src="./img/new_big_week_1_10_22.jpg" alt="#" />
+              </div>
+              <div class="banner-img">
+                <img src="./img/new_big_shoes_1_10_22.jpg" alt="#" />
+              </div>
+            </div>
+
+            <button class="slider-btn left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slider-btn right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <ul class="slider-dots">
+            <li class="slider-dot slider-dot-active"></li>
+            <li class="slider-dot"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="cards" id="cards">
+        <div class="container">
+          <div class="cards-title">
+            <h2>Хиты продаж</h2>
+          </div>
+          <ul class="cards-list">
+            <!-- <li class="card-container" id="">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="close-dialog">X</div>
+              </dialog>
+              <div class="card">
+                <div class="card-img"></div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span></span></div>
+                <div class="description"><span></span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li class="card-container">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+              </dialog>
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span>132 р. 97 к.</span></div>
+                <div class="description"><span>Boots</span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+              </dialog>
+
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span>132 р. 97 к.</span></div>
+                <div class="description"><span>Boots</span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+              </dialog>
+
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span>132 р. 97 к.</span></div>
+                <div class="description"><span>Boots</span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+              </dialog>
+
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="../src/img/ww_global_asos_design_halloween_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span>132 р. 97 к.</span></div>
+                <div class="description"><span>Boots</span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <dialog class="dialog-window">
+                <div class="quick-view-img">
+                  <img
+                    src="./img/ww_global_denim_icons_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+              </dialog>
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="../src/img/ww_global_denim_icons_moment_870x1110.avif"
+                    alt="#"
+                  />
+                </div>
+                <div class="discount-price"><span>132 р. 97 к.</span></div>
+                <div class="price"><span>132 р. 97 к.</span></div>
+                <div class="description"><span>Boots</span></div>
+                <div class="add-to-basket">
+                  <i class="fa-solid fa-cart-shopping" id="shopping-basket"></i>
+                </div>
+                <div class="quick-view">
+                  <button class="quick-view-btn">Быстрый просмотр</button>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

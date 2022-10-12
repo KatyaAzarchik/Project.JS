@@ -1,0 +1,133 @@
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.card {
+  width: 180px;
+  max-height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+.card-img {
+  min-width: 180px;
+  max-height: 340px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+.card-img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.discount-price {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.price {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: rgb(106, 106, 106);
+  line-height: 26px;
+}
+.description {
+  font-size: 16px;
+  color: rgb(106, 106, 106);
+  line-height: 26px;
+}
+.quick-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: 0.2s;
+}
+.quick-view button {
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  padding: 10px 11px;
+  border: none;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  margin-bottom: 110px;
+  transition: 0.2s;
+}
+.quick-view:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.quick-view button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255);
+  transition: 0.2s;
+}
+#shopping-basket {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  color: #cb11ab;
+  font-size: 18px;
+  opacity: 80%;
+  z-index: 55;
+  transition: 0.2s;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+#shopping-basket:hover {
+  opacity: 100%;
+  transition: 0.2s;
+  color: #cb11ab;
+}
+
+.dialog-window {
+  margin: auto;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+.quick-view-img img {
+  position: absolute;
+  top: 50;
+  left: 100;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  overflow: hidden;
+  object-fit: contain;
+}
+.close-dialog {
+  padding: 30px 100px 10px 0;
+  font-size: 30px;
+  width: 100%;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+}
