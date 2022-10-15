@@ -21,7 +21,6 @@ rightArrow.addEventListener("click", function () {
   if (count >= sliderImg.length) {
     count = 0;
   }
-
   roolslider();
 });
 
@@ -36,7 +35,22 @@ window.addEventListener("resize", init);
 function roolslider() {
   sliderLine.style.transform = "translate( -" + count * width + "px)";
 }
-
+let dotFirst = document.querySelector("#slider-dot-first");
+let dotSecond = document.querySelector("#slider-dot-second");
+dotFirst.addEventListener("click", () => {
+  count++;
+  if (count >= sliderImg.length) {
+    count = 0;
+  }
+  roolslider();
+});
+dotSecond.addEventListener("click", function () {
+  count--;
+  if (count < 0) {
+    count = sliderImg.length - 1;
+  }
+  roolslider();
+});
 // rightDot.addEventListener("click", () => {
 //   count++;
 //   if (count >= sliderImg.length) {
