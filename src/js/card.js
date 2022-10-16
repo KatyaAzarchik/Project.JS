@@ -42,7 +42,6 @@ export function addToBasket(data) {
       newElem.appendChild(newElemPrice);
       newElemContainer.appendChild(newElem);
       basketItemParent.show();
-      console.log(productsAtBasket);
     }
   });
 }

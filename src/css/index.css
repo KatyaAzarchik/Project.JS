@@ -13,7 +13,6 @@ html {
   font-family: "Carrois Gothic", sans-serif;
 }
 .container {
-  /* max-width: 1170px; */
   margin: auto;
   padding: 0 55px;
 }
@@ -22,4 +21,53 @@ html {
 }
 .cards {
   margin: 70px 0 40px 0;
+}
+@media (max-width: 1110px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .header-logo {
+    margin-right: 20px;
+  }
+  .basket {
+    margin-left: 30px;
+  }
+  .header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    padding: 10px;
+  }
+  .header-logo {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .basket {
+    margin-left: 20px;
+  }
+  .header-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header {
+    padding: 10px;
+  }
+  .basket {
+    font-size: 16px;
+    text-align: left;
+  }
 }

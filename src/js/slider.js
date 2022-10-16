@@ -51,25 +51,3 @@ dotSecond.addEventListener("click", function () {
   }
   roolslider();
 });
-// rightDot.addEventListener("click", () => {
-//   count++;
-//   if (count >= sliderImg.length) {
-//     count = 0;
-//   }
-//   rightDot.style.width = "13px";
-//   rightDot.style.height = "13px";
-//   leftDot.style.width = "10px";
-//   leftDot.style.height = "10px";
-//   roolslider();
-// });
-// leftDot.addEventListener("click", () => {
-//   count--;
-//   if (count < 0) {
-//     count = sliderImg.length - 1;
-//   }
-//   leftDot.style.width = "13px";
-//   leftDot.style.height = "13px";
-//   rightDot.style.width = "10px";
-//   rightDot.style.height = "10px";
-//   roolslider();
-// });
